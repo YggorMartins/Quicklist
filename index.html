@@ -27,39 +27,64 @@
     </div>
 
     <section>
-      <div class="forms">
-      <form action="" method="post" enctype="multipart/form-data">
-          <div>
+      <div>
+        <form  action="" method="post" enctype="multipart/form-data">
+          <div class="forms">
             <input id="add-item" name="add-item" type="text" placeholder="Adicione um novo item" required>       
             <button class="btn">Adicionar item</button>
           </div>
-      </form>      
+        </form>      
       </div>
     </section>    
   </main>
 
-  <section>
+  <section class="shopping-list">
         <div class="list grid">          
-          <button class="bread shopping-list">
+          <button class="bread shopping-items">
             <div class="checkbox"></div>
-            <p>Pão de Forma</p>
+              <p>Pão de Forma</p>
+                <span>
+                  <img src="./assets/icons/trashbox.svg" alt="">
+                </span>
           </button>      
         
-          <button class="coffee shopping-list">
+          <button class="coffee shopping-items">
             <div class="checkbox"></div>
-            <p>Café preto</p>
-            <div class="trash"></div>
+              <p>Café preto</p>
+                <span>
+                  <img src="./assets/icons/trashbox.svg" alt="">
+                </span>
           </button>
 
-          <button class="juice shopping-list">
+          <button class="juice shopping-items">
             <div class="checkbox"></div>
-            <p>Suco de laranja</p>
+              <p>Suco de laranja</p>
+                <span>
+                  <img src="./assets/icons/trashbox.svg" alt="ícone de lixeira">
+                </span>
           </button>
         
-          <button class="cookies shopping-list">
+          <button class="cookies shopping-items">
             <div class="checkbox"></div>
-            <p>Bolacha</p>
+              <p>Bolacha</p>
+                <span>
+                  <img src="./assets/icons/trashbox.svg" alt="">
+                </span>
           </button>        
+        </div>
+      </section>
+
+      <section class="danger">
+        <div class="alert">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.4401 0.672311C8.76402 0.731551 8.3495 0.792231 7.8829 0.900191C5.60798 1.42659 3.59138 2.81123 2.27602 4.75001C1.21074 6.32017 0.660645 8.10801 0.660645 10C0.660645 11.969 1.2569 13.8258 2.40754 15.44C3.71762 17.2779 5.70588 18.6027 7.9101 19.1066C9.41098 19.4496 11.0525 19.4106 12.5201 18.9971C14.728 18.375 16.6091 16.982 17.8637 15.04C18.2025 14.5158 18.4458 14.0384 18.6997 13.4C19.376 11.6995 19.5222 9.72791 19.1066 7.91001C18.6371 5.85579 17.459 3.99209 15.8001 2.67903C14.4019 1.57237 12.7722 0.906191 10.9801 0.708811C10.7062 0.678631 9.65276 0.653671 9.4401 0.672311ZM9.844 5.30135C9.55204 5.35883 9.31084 5.61595 9.26104 5.92277C9.23498 6.08345 9.23316 10.2565 9.2591 10.4358C9.29494 10.6837 9.44769 10.892 9.67599 11.0044C9.79839 11.0647 9.82485 11.07 10.0001 11.07C10.1754 11.07 10.2018 11.0647 10.3242 11.0044C10.5525 10.892 10.7053 10.6837 10.7411 10.4358C10.767 10.2565 10.7652 6.08345 10.7392 5.92277C10.688 5.60733 10.4487 5.35853 10.1402 5.30003C10.0198 5.27719 9.96548 5.27743 9.844 5.30135ZM9.85966 12.5597C9.60497 12.5921 9.38825 12.7085 9.19705 12.9156C8.95563 13.1772 8.86562 13.5364 8.9509 13.8982C9.01334 14.1631 9.21313 14.4278 9.46152 14.5747C9.59278 14.6523 9.84383 14.72 10.0001 14.72C10.1564 14.72 10.4074 14.6523 10.5387 14.5747C10.7871 14.4278 10.9869 14.1631 11.0493 13.8982C11.1346 13.5364 11.0446 13.1772 10.8032 12.9156C10.55 12.6414 10.2141 12.5147 9.85966 12.5597Z" fill="white"/>
+          </svg>
+          <p>O item foi removido da lista</p>
+            <span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.46967 4.46967C4.76256 4.17678 5.23744 4.17678 5.53033 4.46967L10 8.93934L14.4697 4.46967C14.7626 4.17678 15.2374 4.17678 15.5303 4.46967C15.8232 4.76256 15.8232 5.23744 15.5303 5.53033L11.0607 10L15.5303 14.4697C15.8232 14.7626 15.8232 15.2374 15.5303 15.5303C15.2374 15.8232 14.7626 15.8232 14.4697 15.5303L10 11.0607L5.53033 15.5303C5.23744 15.8232 4.76256 15.8232 4.46967 15.5303C4.17678 15.2374 4.17678 14.7626 4.46967 14.4697L8.93934 10L4.46967 5.53033C4.17678 5.23744 4.17678 4.76256 4.46967 4.46967Z" fill="white"/>
+              </svg>
+            </span>
         </div>
       </section>
 

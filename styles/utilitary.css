@@ -40,7 +40,7 @@
       width: 57px;
       height: 16px;
       
-      align-items: flex-start:
+      align-items: flex-start;
    }    
   }
 
@@ -64,23 +64,3 @@
   }  
 }
 
-.shopping-list {
-  display: flex;
-  width: 327px;
-  height: 57px;
-  flex-direction: row;
-  background-color: var(--background-secondary);
-  border-radius: 12px;
-  gap: 0px;
-  padding-left: 12px;
-  align-items: center;
-  font: var(--paragraph);
-  color: var(--content-secondary);
-  border: none;
-}
-
-.shopping-list:hover {
-  cursor: pointer;
-  border: 1px solid var(--border-hover);
-
-}
