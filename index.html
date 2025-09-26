@@ -29,19 +29,41 @@
     <section>
       <div class="forms">
       <form action="" method="post" enctype="multipart/form-data">
-        <fieldset class="add">
-          <div class="input-wrapper">
-            <label for="add-item"></label>
-            <input id="add-item" name="add-item" type="text" placeholder="Adicione um novo item" required>            
+          <div>
+            <input id="add-item" name="add-item" type="text" placeholder="Adicione um novo item" required>       
+            <button class="btn">Adicionar item</button>
           </div>
-        </fieldset>
-        <button class="btn">
-              Adicionar item
-        </button>
-      </form>
+      </form>      
       </div>
-    </section>
+    </section>    
   </main>
+
+  <section>
+        <div class="list grid">          
+          <button class="bread shopping-list">
+            <div class="checkbox"></div>
+            <p>Pão de Forma</p>
+          </button>      
+        
+          <button class="coffee shopping-list">
+            <div class="checkbox"></div>
+            <p>Café preto</p>
+            <div class="trash"></div>
+          </button>
+
+          <button class="juice shopping-list">
+            <div class="checkbox"></div>
+            <p>Suco de laranja</p>
+          </button>
+        
+          <button class="cookies shopping-list">
+            <div class="checkbox"></div>
+            <p>Bolacha</p>
+          </button>        
+        </div>
+      </section>
+
+    
   <script src="script.js"></script>
  </body>
  </html>

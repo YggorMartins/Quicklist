@@ -4,27 +4,16 @@
   margin-top: 44px;
   width: 326px;
   height: 104px;
-  position: absolute;
+
 
   & #add-item {
   width: 326px;
   height: 44px;
   border-radius: 12px;
-
   }
-
-  /* border: 1px solid red; */
 }
 
-.add {
-  width: 326px;
-  height: 44px;
-  display: grid;
-  gap: 16px;
-  border-radius: 12px;
-  position: relative;
-
-  & input {
+input {
     font: var(--paragraph);
     color: var(--content-tertiary);
     padding-left: 18px;
@@ -34,8 +23,6 @@
   & input:hover{
     border-color: var(--border-secondary);
   }
-  
-}
 
 .btn {
   width: 326px;
@@ -52,3 +39,38 @@
   cursor: pointer;
   background-color: var(--color-brand-hover);
 }
+
+@media (width >= 80em) {
+  .forms {
+  display: flex;
+  /* flex-direction: row; */
+  margin-top: 44px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 627px;
+  height: 44px;
+  gap: 12px;
+  border: 1px solid red;
+
+
+  & #add-item {
+  width: 451px;
+  height: 44px;
+  /* border-radius: 12px; */
+  }
+
+  & .btn {
+  width: 160px;
+  height: 44px;
+  border-radius: 12px;
+  margin-top: 0;
+  font: var(--label);
+  color: white;
+  border: none;
+  background-color: var(--color-brand);
+  border: 1px solid red;
+    }
+  }
+}
+
+
