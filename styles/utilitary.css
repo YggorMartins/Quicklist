@@ -1,7 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 .container {
   --max-width: 390px;
-  padding-left: 32px;
-  /* width: min(var(--max-width), 100% - 1.5rem * 2); */
+
 }
 
 .desktop-only {
@@ -29,11 +35,18 @@
 }
 
 @media (width >= 80em) {
-  .container {
-    --max-width: 80rem;
+  body {
     display: flex;
     flex-direction: column;
-    padding-left: 369px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    width: 627px;
+    flex-direction: column;
+    padding-left: 0;
+
 
    & .container-1 {
       display: flex;
@@ -49,11 +62,6 @@
     justify-content: center;
     margin-top: 25px;
     gap: 7px;
-  }
-
-  .even-colums {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
   }
 
   .back{    

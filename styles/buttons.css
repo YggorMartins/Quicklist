@@ -1,7 +1,7 @@
 .list {
   width: 327px;
   height: 264px;
-  padding-left: 32px;
+  /* padding-left: 32px; */
   margin-top: 40px;
   gap: 12px;
 
@@ -113,7 +113,7 @@
   .shopping-list {
     display: flex;
     justify-content: center;
-    padding-left: 90px;
+
   }
 
   .list {
@@ -134,7 +134,7 @@
     & p {
     display: flex;
     align-items: center;
-    /* padding-left: 12px; */
+
     width: 531px;
     height: 33px;
   }
@@ -152,7 +152,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 90px;
+
   }
 
   & .alert {

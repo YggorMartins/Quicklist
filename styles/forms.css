@@ -46,17 +46,14 @@ input {
   display: flex;
   flex-direction: row;
   margin-top: 44px;
-
   width: 627px;
   height: 44px;
   gap: 12px;
 
-
-
   & #add-item {
   width: 451px;
   height: 44px;
-  /* border-radius: 12px; */
+
   }
 
   & .btn {
