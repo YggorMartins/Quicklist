@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0;
   }
 
 .container {
@@ -28,6 +29,14 @@ body {
 
 .gap-1 {
   gap: 1rem;
+}
+
+.gap-125 {
+  gap: 1.25rem;
+}
+
+.gap-75 {
+  gap: 0.75rem;
 }
 
 .grid {

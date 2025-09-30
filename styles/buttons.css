@@ -1,9 +1,17 @@
-.list {
-  width: 327px;
-  height: 264px;
-  /* padding-left: 32px; */
-  margin-top: 40px;
+.items-list {
+  display: grid;
   gap: 12px;
+}
+
+.list {
+  display: grid;
+  flex-direction: column;
+
+  width: 327px;
+  min-height: 264px;
+
+  margin-top: 40px;
+
 
   & p{
     display: flex;
@@ -76,7 +84,7 @@
 }
 
 .danger {
-  display: flex;
+  display: none;
   justify-content: center;
   margin-top: 36px;
 }
@@ -117,11 +125,10 @@
   }
 
   .list {
-    display: flex;
+    display: grid;
     flex-direction: column;
-    /* border: 1px solid red; */
     width: 627px;
-    height: 232px;
+    min-height: 232px;
     padding: 0;
     gap: 20px;
 
@@ -149,7 +156,7 @@
   }
 
   & .danger {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 

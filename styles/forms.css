@@ -25,6 +25,11 @@ input {
     border-color: var(--border-secondary);
   }
 
+  & input:focus {
+    outline: none;
+    border-color: var(--color-brand);
+  }
+
 .btn {
   width: 326px;
   height: 44px;

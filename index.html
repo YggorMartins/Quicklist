@@ -28,7 +28,7 @@
 
     <section class="flex items-center">
       <div>
-        <form  action="" method="post" enctype="multipart/form-data">
+        <form class="form" action="" method="get" onsubmit="return false" enctype="multipart/form-data">
           <div class="forms">
             <input id="add-item" name="add-item" type="text" placeholder="Adicione um novo item" required>       
             <button class="btn">Adicionar item</button>
@@ -39,38 +39,40 @@
   </main>
 
   <section class="shopping-list">
-        <div class="list grid">          
-          <button class="bread shopping-items">
+        <div class="list"> 
+          <ul class="items-list ">
+          <li class="bread shopping-items">
             <div class="checkbox"></div>
               <p>Pão de Forma</p>
                 <span>
                   <img src="./assets/icons/trashbox.svg" alt="">
                 </span>
-          </button>      
+          </li>      
         
-          <button class="coffee shopping-items">
+          <li class="coffee shopping-items">
             <div class="checkbox"></div>
               <p>Café preto</p>
                 <span>
                   <img src="./assets/icons/trashbox.svg" alt="">
                 </span>
-          </button>
+          </li>
 
-          <button class="juice shopping-items">
+          <li class="juice shopping-items">
             <div class="checkbox"></div>
               <p>Suco de laranja</p>
                 <span>
                   <img src="./assets/icons/trashbox.svg" alt="ícone de lixeira">
                 </span>
-          </button>
+          </li>
         
-          <button class="cookies shopping-items">
+          <li class="cookies shopping-items">
             <div class="checkbox"></div>
               <p>Bolacha</p>
                 <span>
                   <img src="./assets/icons/trashbox.svg" alt="">
                 </span>
-          </button>        
+          </li>
+          </ul>              
         </div>
       </section>
 
@@ -89,6 +91,6 @@
       </section>
 
     
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
  </body>
  </html>
